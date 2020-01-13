@@ -11413,6 +11413,22 @@ video {
   z-index: auto;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track{
+  background: #C6F6D5;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #38A169;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #276749;
+}
+
 @media (min-width: 640px){
   .sm\:sr-only{
     position: absolute;
