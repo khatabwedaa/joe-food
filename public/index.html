@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="app" class="font-tajawal" dir="rtl">
-        <nav class="md:flex md:justify-between items-center py-4 px-8 border-green-600 border-b-4">
+        <nav class="md:flex md:justify-between items-center py-4 px-8 border-green-600 border-b-4"> <!-- Navbar Start-->
             <div class="flex justify-between items-center">
                 <a class="text-3xl font-bold text-green-700"href="#">علامة</a>
                 <button @click="isOpen = !isOpen" type="button" class="block md:hidden text-green-600 hover:text-green-700 focus:text-green-700 focus:outline-none">
@@ -30,8 +30,9 @@
                 <h1 class="mx-4 text-sm text-gray-700 font-bold">فلان الفلاني</h1>
                 <img class="h-10 w-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1578919344195-961cb7fdf32c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="avatar">
             </div>
-        </nav>
-        <div class="flex items-center justify-center py-16 bg-cover bg-center border-green-600 border-b-4" style="background-image: url('https://images.unsplash.com/photo-1553536645-f83758b55d23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80');">
+        </nav> <!-- Navbar End-->
+
+        <div class="flex items-center justify-center py-16 bg-cover bg-center border-green-600 border-b-4" style="background-image: url('https://images.unsplash.com/photo-1553536645-f83758b55d23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80');"> <!-- Header Start-->
             <div class="flex flex-col items-center bg-white py-12 px-10 mx-6 rounded-lg">
                 <h1 class="sm:text-2xl md:text-3xl text-green-700 font-bold">نحن هنا لمساعدتك</h1>
                 <p class="my-4 text-gray-600">في حساب السعرات الحرارية لقائمة الطعام في منشأتك الغذائية</p>
@@ -42,14 +43,16 @@
                     حساب جديد
                 </button>
             </div>
-        </div>
-        <div class="text-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80');">
+        </div> <!-- Header End-->
+
+        <div class="text-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80');"> <!-- About us End-->
             <div class="bg-green-700 opacity-75 py-16 px-12">
                 <h1 class="text-white text-4xl font-bold">من نحن</h1>
                 <p class="text-white font-medium text-lg">مكتب خبرة الغذاء لخدمات الاستشارات الغذائية هو مكتب حاصل على ترخيص من الهيئة العامة الغذاء والدواء لتقديم خدمة الاستشارات الغذائية للمنشأت الغذائية فيما يخص حساب السعرات الحرارية وتطبيق لوائح ونظام الغذاء الصادر من هيئة الغذائية والدواء.</p>
             </div>
-        </div>
-        <div class="text-center py-16 px-12">
+        </div> <!-- About us End-->
+
+        <div class="text-center py-16 px-12"> <!-- Team Works Start -->
             <div>
                 <h1 class="text-green-700 text-4xl font-bold">فريق العمل</h1>
                 <p class="text-gray-600 font- text-lg mt-4">نحن هنا لمساعدتك في حساب السعرات الحرارية لقائمة الطعام في منشأتك الغذائية وتطبيق لوائح ونظام الغذاء الصادر من هيئة الغذائية والدواء</p>
@@ -63,22 +66,54 @@
                     </div>
                 </div>
                 <div class="bg-white shadow-lg rounded-lg max-w-sm overflow-hidden mt-8 mx-2">
-                    <img class="h-64 w-full object-cover object-center" src="https://images.unsplash.com/photo-1491830185852-a887e3a5ffbf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=890&q=80" alt="avatar">
+                    <img class="h-40 md:h-64 w-full object-cover object-center" src="https://images.unsplash.com/photo-1491830185852-a887e3a5ffbf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=890&q=80" alt="avatar">
                     <div class="py-4">
                         <h1 class="text-2xl text-green-700 font-bold">جاستن هوك </h1>
                         <p class="text-gray-600">لوريم ابيسم</p>
                     </div>
                 </div>
                 <div class="bg-white shadow-lg rounded-lg max-w-sm overflow-hidden mt-8 mx-2">
-                    <img class="h-64 w-full object-cover object-center" src="https://images.unsplash.com/photo-1462134750340-65243d62962b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="avatar">
+                    <img class="h-40 md:h-64 w-full object-cover object-center" src="https://images.unsplash.com/photo-1462134750340-65243d62962b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="avatar">
                     <div class="py-4">
                         <h1 class="text-2xl text-green-700 font-bold">ستيف مات</h1>
                         <p class="text-gray-600">لوريم ابيسم</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </div> <!-- Team Works End -->
+
+        <div class="bg-green-700 py-16 px-12"> <!-- Product Start -->
+            <div class="flex bg-white rounded-lg overflow-hidden">
+                <img class="hidden md:block w-1/2 object-center object-cover" src="https://images.unsplash.com/photo-1538159021332-8f28e9eca2fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=625&q=80">
+                <div class="py-10 px-12">
+                    <h1 class="text-3xl text-green-700 font-bold">الباقة الاساسية</h1>
+                    <p class="mt-4 text-gray-600">
+                        نقوم بحساب السعرات الحرارية والبيانات التغذوية الاخرى ونقدم لكم تقرير تغذوي متكامل ودقيق لجميع وصفات قائمة الطعام و المشروبات.
+                        البيانات التغذوية الأخرى تتضمن : الدهون الكلية ، الدهون المشبعة، الدهون المتحولة، كولسترول، صوديوم، الكربوهيدرات الكلية، ألياف غذائية، سكريات كلية، سكر مضاف، بروتين.
+                        خدماتنا تقدم من قبل مختصين مرخصين في خدمات الغذاء؛ ونضمن لكم امتثالنا للوائح هيئة الغذاء والدواء.
+                        نلتزم بمتطلبات لائحة وضع السعرات الحرارية في قائمة الطعام للمطاعم والمقاهي والتي صدرت في عام 2018 من قبل هيئة الغذاء والدواء. ( نفس الباقة الاساسية ) + (تصميم احترافي لقائمة الطعام لدى المنشأت.
+                    </p>
+                    <button class="mt-6 py-3 px-4 bg-green-600 text-white rounded font-bold hover:bg-green-500 focus:outline-none" type="button">
+                        اطلب الان
+                    </button>
+                </div>
+            </div>
+            <div class="flex bg-white rounded-lg overflow-hidden mt-8">
+                <img class="hidden md:block w-1/2 object-center object-cover" src="https://images.unsplash.com/photo-1538159021332-8f28e9eca2fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=625&q=80">
+                <div class="py-10 px-12">
+                    <h1 class="text-3xl text-green-700 font-bold">الباقة الكاملة</h1>
+                    <p class="mt-4 text-gray-600">
+                        نقوم بحساب السعرات الحرارية والبيانات التغذوية الاخرى ونقدم لكم تقرير تغذوي متكامل ودقيق لجميع وصفات قائمة الطعام و المشروبات.
+                        البيانات التغذوية الأخرى تتضمن : الدهون الكلية ، الدهون المشبعة، الدهون المتحولة، كولسترول، صوديوم، الكربوهيدرات الكلية، ألياف غذائية، سكريات كلية، سكر مضاف، بروتين.
+                        خدماتنا تقدم من قبل مختصين مرخصين في خدمات الغذاء؛ ونضمن لكم امتثالنا للوائح هيئة الغذاء والدواء.
+                        نلتزم بمتطلبات لائحة وضع السعرات الحرارية في قائمة الطعام للمطاعم والمقاهي والتي صدرت في عام 2018 من قبل هيئة الغذاء والدواء. ( نفس الباقة الاساسية ) + (تصميم احترافي لقائمة الطعام لدى المنشأت.
+                    </p>
+                    <button class="mt-6 py-3 px-4 bg-green-600 text-white rounded font-bold hover:bg-green-500 focus:outline-none" type="button">
+                        اطلب الان
+                    </button>
+                </div>
+            </div>
+        </div> <!-- Product End -->
 </body>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script>
