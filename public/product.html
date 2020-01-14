@@ -34,8 +34,10 @@
 
         
         <div class="flex justify-center">
-            <div class="mx-48 my-10">
-                <img class="rounded-lg" src="https://images.unsplash.com/photo-1542223189-67a03fa0f0bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80" alt="image">
+            <div class="mx-20 md:mx-48 my-10">
+                <div>
+                    <img class="rounded-lg w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1542223189-67a03fa0f0bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80" alt="image">
+                </div>
                 <div class="my-6">
                     <h1 class="w-64 text-4xl text-green-700 font-bold border-b-2 border-green-600">الباقة الاساسية</h1>
                     <p class="mt-6 text-gray-600">
@@ -45,6 +47,92 @@
                         نلتزم بمتطلبات لائحة وضع السعرات الحرارية في قائمة الطعام للمطاعم والمقاهي والتي صدرت في عام 2018 من قبل هيئة الغذاء والدواء.
                     </p>
                 </div>
+                <form class="mt-2">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="w-full md:w-1/2 md:mx-2 mt-4">
+                            <label class="text-gray-600">الاسم</label>
+                            <input class="mt-2 bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 w-full appearance-none" type="name">
+                        </div>
+                        <div class="w-full md:w-1/2 md:mx-2 mt-4">
+                            <label class="text-gray-600">علاقته بالمنشاء الغذائية</label>
+                            <select name="category_id" class="mt-2 bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 w-full appearance-none" required>
+                                    <option value="1">مالك المنشاة</option>
+                                    <option value="2">مساعد</option>
+                                    <option value="3">مدير تنفيذي</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="my-8">
+                        <h1 class="text-gray-700 text-2xl font-bold">بيانات المنشاة الغذائية</h1>
+                        <div class="w-full my-4 border-gray-500 border-2"></div>
+                        <div class="w-full mt-8">
+                            <label class="text-gray-600">نوع المنشاة</label>
+                            <input class="mt-2 bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 w-full appearance-none" type="name">
+                        </div>
+                        <div class="w-full mt-4">
+                            <label class="text-gray-600">المدينة التي تقع بها المنشاة</label>
+                            <input class="mt-2 bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 w-full appearance-none" type="name">
+                        </div>
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="w-full md:w-1/2 md:mx-2 mt-2">
+                                <label class="text-gray-600">الحي</label>
+                                <input class="mt-2 bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 w-full appearance-none" type="name">
+                            </div>
+                            <div class="w-full md:w-1/2 md:mx-2 mt-2">
+                                <label class="text-gray-600">الشارع</label>
+                                <input class="mt-2 bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 w-full appearance-none" type="name">
+                            </div>
+                        </div>
+                        <div class="w-full mt-4">
+                            <label class="text-gray-600">الاسم الرسمي او التجاري للمنشاة</label>
+                            <input class="mt-2 bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 w-full appearance-none" type="name">
+                        </div>
+                        <div class="w-full mt-4">
+                            <label class="text-gray-600">عدد فروع المنشاة</label>
+                            <input class="mt-2 bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 w-full appearance-none" type="name">
+                        </div>
+                        <div class="w-full mt-4">
+                            <label class="text-gray-600">رفع قائمة الطعام</label>
+                            <input class="mt-2 bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 w-full appearance-none" type="file">
+                        </div>
+                        <h1 class="mt-4 text-gray-600 text-md font-bold">هل ترغب بتصميم المنيو</h1>
+                        <div class="flex items-center mt-4">
+                            <input type="radio">
+                            <label class="text-xs mx-2 text-gray-800">نعم</label>
+                        </div>
+                        <div class="flex items-center mt-2">
+                            <input type="radio">
+                            <label class="text-xs mx-2 text-gray-800">لا</label>
+                        </div>
+                        <div class="w-full mt-4">
+                            <h1 class="text-gray-700 text-2xl font-bold">ارقام التواصل</h1>
+                            <div class="w-full my-4 border-gray-500 border-2"></div>
+                        </div>
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="w-full md:w-1/2 md:mx-2 mt-2">
+                                <label class="text-gray-600">قم جوال</label>
+                                <input class="mt-2 bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 w-full appearance-none" type="name">
+                            </div>
+                            <div class="w-full md:w-1/2 md:mx-2 mt-2">
+                                <label class="text-gray-600">رقم جوال ثاني</label>
+                                <input class="mt-2 bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 w-full appearance-none" type="name">
+                            </div>
+                        </div>
+                        <div class="flex items-center mt-8">
+                            <input type="checkbox">
+                            <label class="text-xs mx-2 text-gray-800">الموافقة علي الشروط وسياسة تقديم الخدمة</label>
+                        </div>
+                        <div class="flex items-center mt-4">
+                            <input type="checkbox">
+                            <label class="text-xs mx-2 text-gray-800">اتفاقية عدم الافصاح عن المعلومات السؤية</label>
+                        </div>
+                    </div>
+                    <div class="flex justify-end items-center mt-6">
+                        <button class="my-1 py-2 px-3 bg-green-600 text-white rounded hover:bg-green-500 focus:outline-none" type="button">
+                            تقديم الطلب
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
 
