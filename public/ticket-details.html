@@ -19,14 +19,14 @@
                     </svg>
                 </button>
             </div>
-            <div class="flex flex-col md:flex-row" v-if="isOpen">
+            <div :class="isOpen ? 'block' : ['hidden' , 'md:block']" class="flex flex-col md:flex-row">
                 <a class="mt-2 px-2 py-3 text-green-700 font-bold hover:bg-green-600 hover:text-white rounded md:mx-4 md:mt-0" href="#">الرئيسية</a>
                 <a class="mt-2 px-2 py-3 text-green-700 font-bold hover:bg-green-600 hover:text-white rounded md:mx-4 md:mt-0" href="#">من نحن</a>
                 <a class="mt-2 px-2 py-3 text-green-700 font-bold hover:bg-green-600 hover:text-white rounded md:mx-4 md:mt-0" href="#">اسائلة شائعة</a>
                 <a class="mt-2 px-2 py-3 text-green-700 font-bold hover:bg-green-600 hover:text-white rounded md:mx-4 md:mt-0" href="#">اطلب الان</a>
                 <a class="mt-2 px-2 py-3 text-green-700 font-bold hover:bg-green-600 hover:text-white rounded md:mx-4 md:mt-0" href="#">تواصل معنا</a>
             </div>
-            <div class="flex items-center justify-center my-4" v-if="isOpen">
+            <div :class="isOpen ? 'block' : ['hidden' , 'md:inline-flex']" class="flex items-center justify-center my-4">
                 <h1 class="mx-4 text-sm text-gray-700 font-bold">إسم المستخدم</h1>
                 <img class="h-10 w-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1578919344195-961cb7fdf32c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="avatar">
             </div>
